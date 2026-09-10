@@ -6,9 +6,14 @@ Every texture, mesh, heightfield and sound in this project is **generated proced
 code**. There are no binary art assets in the repository and nothing is downloaded at
 runtime.
 
-![Golden hour over downtown](01_skyline_golden.png)
+### ▶ [Play it in your browser](https://rebollo507.github.io/Metropolis/)
 
-## Quick start
+No install, no download. Needs WebGL 2 and a discrete or reasonably modern integrated GPU —
+the city is ~1 300 draw calls per frame.
+
+[![Golden hour over downtown](01_skyline_golden.png)](https://rebollo507.github.io/Metropolis/)
+
+## Running it locally
 
 ```bash
 cd citysim
@@ -64,6 +69,7 @@ citysim/                 the application
   docs/                  architecture contract, agent briefs, critic rounds
   ARCHITECTURE.md        the contract, written before any feature code
   README.md              the full technical write-up
+.github/workflows/       builds citysim/ and deploys it to GitHub Pages on push to main
 *.png                    showcase renders
 ```
 
