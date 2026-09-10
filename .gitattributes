@@ -1,0 +1,4 @@
+# Normalise line endings: LF in the repository and in the working tree.
+# Overrides a global core.autocrlf=true, which would otherwise rewrite the
+# whole tree to CRLF on checkout.
+* text=auto eol=lf

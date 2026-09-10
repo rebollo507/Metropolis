@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>audio lab — offline measurement</title>
+  <style>
+    body { margin: 0; background: #0b0f14; color: #cfe0f0;
+           font: 13px "Liberation Sans", system-ui, Arial, sans-serif; padding: 18px; }
+    canvas { display: block; margin: 10px 0 18px; border: 1px solid #223; }
+    h1 { font-size: 15px; letter-spacing: .1em; text-transform: uppercase; color: #8fa6bd; }
+  </style>
+</head>
+<body>
+  <h1>audio lab</h1>
+  <p id="status">loading…</p>
+  <div id="plots"></div>
+  <script type="module">
+    import { boot } from './lab.js';
+    boot().then(() => { document.getElementById('status').textContent = 'ready'; });
+  </script>
+</body>
+</html>

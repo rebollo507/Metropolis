@@ -1,0 +1,7 @@
+node_modules
+dist
+docs/shots
+public/assets/*.hdr
+public/assets/*.jpg
+public/assets/*.png
+.vite

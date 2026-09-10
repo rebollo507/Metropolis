@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Metropolis</title>
+<style>
+  :root { color-scheme: dark; }
+  html,body { margin:0; height:100%; background:#05070c; overflow:hidden;
+    font: 13px/1.4 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color:#e8edf5; }
+  #app { position:fixed; inset:0; }
+  canvas { display:block; width:100%; height:100%; }
+  #boot { position:fixed; inset:0; display:grid; place-items:center; z-index:50;
+    background:radial-gradient(120% 100% at 50% 40%, #101a2b 0%, #05070c 70%);
+    transition:opacity .6s ease; }
+  #boot.gone { opacity:0; pointer-events:none; }
+  #boot .b { text-align:center; letter-spacing:.28em; text-transform:uppercase;
+    font-size:11px; color:#7d8ca6; }
+  #boot .b b { display:block; font-size:26px; letter-spacing:.5em; color:#dce6f5;
+    margin-bottom:14px; font-weight:500; }
+  #err { position:fixed; left:12px; bottom:12px; max-width:46ch; z-index:60;
+    background:rgba(120,20,20,.82); border:1px solid #d05a5a; border-radius:8px;
+    padding:8px 10px; font-size:11px; display:none; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="boot"><div class="b"><b>METROPOLIS</b>loading</div></div>
+  <div id="err"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

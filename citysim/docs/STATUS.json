@@ -1,0 +1,1425 @@
+{
+  "project": "Metropolis",
+  "updated": "2026-09-10T16:25:47.994Z",
+  "wave": 0,
+  "budget": {
+    "fps": 50,
+    "drawCalls": 1500,
+    "passScore": 8.5
+  },
+  "environmentNotes": {
+    "cpus": 2,
+    "gpu": "none \u2014 headless Chromium / SwiftShader software WebGL2",
+    "fpsMeaningful": false,
+    "egress": "polyhaven.org and ambientcg.com blocked; every asset is procedural",
+    "note": "fps is NOT gated (REAL_GPU!=1). Draw calls and console errors are."
+  },
+  "modules": {
+    "roads": {
+      "shotsTaken": 7,
+      "passing": 7,
+      "technicalPass": true,
+      "maxDrawCalls": 46,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "roads/junction",
+          "preset": "street",
+          "time": 13,
+          "variant": "intersection",
+          "pass": true,
+          "drawCalls": 46,
+          "triangles": 1283734,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "fc7756fe"
+        },
+        {
+          "shot": "_integ1",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 17,
+          "triangles": 843204,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3398bd6e"
+        },
+        {
+          "shot": "roads/app_golden",
+          "preset": "aerial",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 17,
+          "triangles": 820804,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "af273bb0"
+        },
+        {
+          "shot": "roads/grid_noon",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 17,
+          "triangles": 835206,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "7a14df15"
+        },
+        {
+          "shot": "roads/wet",
+          "preset": "street",
+          "time": 13,
+          "variant": "intersection",
+          "pass": true,
+          "drawCalls": 17,
+          "triangles": 600784,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "8b68541a"
+        },
+        {
+          "shot": "roads/highway",
+          "preset": "street",
+          "time": 16,
+          "variant": "highway",
+          "pass": true,
+          "drawCalls": 17,
+          "triangles": 607516,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc0e1d4c"
+        },
+        {
+          "shot": "roads/night",
+          "preset": "street",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 17,
+          "triangles": 835206,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "7a14df15"
+        }
+      ],
+      "score": 7.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 8.0 after r2 (post-critic) \u2014 verge, cuttings, bridge all fixed since"
+    },
+    "app": {
+      "shotsTaken": 1,
+      "passing": 0,
+      "technicalPass": false,
+      "maxDrawCalls": 1,
+      "consoleErrorShots": 1,
+      "latest": [
+        {
+          "shot": "_smoke",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "default",
+          "pass": false,
+          "drawCalls": 1,
+          "triangles": 0,
+          "errors": 1,
+          "reasons": [
+            "1 console error(s)"
+          ],
+          "worldHash": "3fd7fe32"
+        }
+      ],
+      "score": null,
+      "round": 0,
+      "openIssues": []
+    },
+    "audio": {
+      "shotsTaken": 5,
+      "passing": 5,
+      "technicalPass": true,
+      "maxDrawCalls": 432,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "audio/analyser_rain",
+          "preset": "city",
+          "time": 15,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 391,
+          "triangles": 4733062,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        },
+        {
+          "shot": "audio/analyser_night",
+          "preset": "city",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 374,
+          "triangles": 4660995,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        },
+        {
+          "shot": "audio/analyser_noon",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 392,
+          "triangles": 4737255,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        },
+        {
+          "shot": "audio/sources_noon",
+          "preset": "city",
+          "time": 13,
+          "variant": "sources",
+          "pass": true,
+          "drawCalls": 432,
+          "triangles": 4162647,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        },
+        {
+          "shot": "audio/mix_golden",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "mix",
+          "pass": true,
+          "drawCalls": 360,
+          "triangles": 3667682,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        }
+      ],
+      "score": 7.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "provisional and unverifiable \u2014 nobody in this pipeline can hear it"
+    },
+    "buildings": {
+      "shotsTaken": 12,
+      "passing": 6,
+      "technicalPass": false,
+      "maxDrawCalls": 332,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "buildings/r4_street_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 332,
+          "triangles": 3027008,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "9a4cd765"
+        },
+        {
+          "shot": "buildings/r3_probe",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 245,
+          "triangles": 1750808,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "9a4cd765"
+        },
+        {
+          "shot": "buildings/r2_street_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 237,
+          "triangles": 1688836,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3ebc162f"
+        },
+        {
+          "shot": "buildings/r2_skyline_golden",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "skyline",
+          "pass": true,
+          "drawCalls": 218,
+          "triangles": 1503640,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "8a7774fe"
+        },
+        {
+          "shot": "buildings/r2_probe_night",
+          "preset": "street",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 238,
+          "triangles": 1532528,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3ebc162f"
+        },
+        {
+          "shot": "buildings/res_13",
+          "preset": "street",
+          "time": 13,
+          "variant": "residential",
+          "pass": false,
+          "drawCalls": 270,
+          "triangles": 1057539,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "8dcfd03a"
+        },
+        {
+          "shot": "buildings/tower_13",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "tower",
+          "pass": false,
+          "drawCalls": 185,
+          "triangles": 979672,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "0fc1888b"
+        },
+        {
+          "shot": "buildings/skyline_1875",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "skyline",
+          "pass": false,
+          "drawCalls": 273,
+          "triangles": 950936,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "5ce01b9d"
+        }
+      ],
+      "score": 8.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 7.8 after r4"
+    },
+    "demo": {
+      "shotsTaken": 116,
+      "passing": 116,
+      "technicalPass": true,
+      "maxDrawCalls": 1361,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "final/night",
+          "preset": "night",
+          "time": 22,
+          "variant": "night",
+          "pass": true,
+          "drawCalls": 1361,
+          "triangles": 12587586,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "final/skyline_golden",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "skyline",
+          "pass": true,
+          "drawCalls": 1297,
+          "triangles": 12508338,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "demo/overview_noon",
+          "preset": "city",
+          "time": 13,
+          "variant": "overview",
+          "pass": true,
+          "drawCalls": 954,
+          "triangles": 9590667,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "demo/residential_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "residential",
+          "pass": true,
+          "drawCalls": 618,
+          "triangles": 8151980,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "demo/waterfront_golden",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "waterfront",
+          "pass": true,
+          "drawCalls": 1122,
+          "triangles": 12600968,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "demo/downtown_night",
+          "preset": "street",
+          "time": 22,
+          "variant": "downtown",
+          "pass": true,
+          "drawCalls": 658,
+          "triangles": 10378784,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "demo/downtown_golden",
+          "preset": "street",
+          "time": 18.75,
+          "variant": "downtown",
+          "pass": true,
+          "drawCalls": 703,
+          "triangles": 11261123,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        },
+        {
+          "shot": "demo/downtown_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "downtown",
+          "pass": true,
+          "drawCalls": 563,
+          "triangles": 10880151,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "cc359741"
+        }
+      ],
+      "score": 8.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 8.0 after r3, r4 partial"
+    },
+    "effects": {
+      "shotsTaken": 9,
+      "passing": 8,
+      "technicalPass": false,
+      "maxDrawCalls": 48,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "effects/r2_show_closeup",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 45,
+          "triangles": 603655,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "effects/r2_show_rain_night",
+          "preset": "street",
+          "time": 22,
+          "variant": "rain",
+          "pass": true,
+          "drawCalls": 45,
+          "triangles": 603655,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "effects/r2_show_night",
+          "preset": "street",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 45,
+          "triangles": 603655,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "effects/r2_show_golden",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 45,
+          "triangles": 603655,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "effects/r2_show_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 45,
+          "triangles": 603655,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "effects/street_22_on",
+          "preset": "street",
+          "time": 22,
+          "variant": "default",
+          "pass": false,
+          "drawCalls": 48,
+          "triangles": 603658,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "3e57a81e"
+        },
+        {
+          "shot": "effects/t_on",
+          "preset": "street",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 48,
+          "triangles": 599530,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e57a81e"
+        },
+        {
+          "shot": "effects/t_off",
+          "preset": "street",
+          "time": 22,
+          "variant": "off",
+          "pass": true,
+          "drawCalls": 24,
+          "triangles": 598866,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e57a81e"
+        }
+      ],
+      "score": 7.5,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 7.5 after r3 GTAO"
+    },
+    "environment": {
+      "shotsTaken": 22,
+      "passing": 22,
+      "technicalPass": true,
+      "maxDrawCalls": 61,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "environment/r2_env_night",
+          "preset": "skyline",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 61,
+          "triangles": 661048,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "environment/r2_env_noon",
+          "preset": "skyline",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 61,
+          "triangles": 661048,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "environment/r2_env_golden",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 61,
+          "triangles": 661048,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "environment/r2_repro_post",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 61,
+          "triangles": 661048,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "environment/night",
+          "preset": "skyline",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 37,
+          "triangles": 538528,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "c79e2392"
+        },
+        {
+          "shot": "environment/golden",
+          "preset": "skyline",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 37,
+          "triangles": 538528,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "c79e2392"
+        },
+        {
+          "shot": "environment/noon",
+          "preset": "skyline",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 37,
+          "triangles": 538528,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "c79e2392"
+        },
+        {
+          "shot": "environment/dawn",
+          "preset": "skyline",
+          "time": 6.5,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 37,
+          "triangles": 538528,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "c79e2392"
+        }
+      ],
+      "score": 7.5,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 8.0 after r5 aerial perspective (post-critic)"
+    },
+    "props": {
+      "shotsTaken": 14,
+      "passing": 14,
+      "technicalPass": true,
+      "maxDrawCalls": 590,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "props/r3_smoke",
+          "preset": "street",
+          "time": 22,
+          "variant": "night",
+          "pass": true,
+          "drawCalls": 590,
+          "triangles": 8035817,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "e086c8f5"
+        },
+        {
+          "shot": "props/street_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 268,
+          "triangles": 3971124,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "b2e416eb"
+        },
+        {
+          "shot": "props/street_night",
+          "preset": "street",
+          "time": 22,
+          "variant": "night",
+          "pass": true,
+          "drawCalls": 380,
+          "triangles": 4399431,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "e086c8f5"
+        },
+        {
+          "shot": "props/app_smoke",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 385,
+          "triangles": 3436549,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "c0d8cd47"
+        },
+        {
+          "shot": "props/park_golden",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "park",
+          "pass": true,
+          "drawCalls": 434,
+          "triangles": 4025518,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "f45b6254"
+        },
+        {
+          "shot": "props/trees_closeup",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "trees",
+          "pass": true,
+          "drawCalls": 85,
+          "triangles": 650332,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "props/cars",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "cars",
+          "pass": true,
+          "drawCalls": 61,
+          "triangles": 598388,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "props/it4",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 404,
+          "triangles": 3709290,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "fb0a19cc"
+        }
+      ],
+      "score": 8.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 8.0 after r3"
+    },
+    "simulation": {
+      "shotsTaken": 4,
+      "passing": 4,
+      "technicalPass": true,
+      "maxDrawCalls": 521,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "simulation/coverage",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "coverage",
+          "pass": true,
+          "drawCalls": 291,
+          "triangles": 941635,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "50b45d97"
+        },
+        {
+          "shot": "simulation/demand",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "demand",
+          "pass": true,
+          "drawCalls": 289,
+          "triangles": 940603,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "50b45d97"
+        },
+        {
+          "shot": "simulation/landvalue",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 287,
+          "triangles": 939763,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "50b45d97"
+        },
+        {
+          "shot": "simulation/rhythm",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "rhythm",
+          "pass": true,
+          "drawCalls": 521,
+          "triangles": 3595906,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "50b45d97"
+        }
+      ],
+      "score": 7.5,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; never had a fix round"
+    },
+    "terrain": {
+      "shotsTaken": 14,
+      "passing": 14,
+      "technicalPass": true,
+      "maxDrawCalls": 37,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "terrain/r2_street",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 37,
+          "triangles": 1257222,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "ce112f25"
+        },
+        {
+          "shot": "terrain/closeup_rain",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "closeup",
+          "pass": true,
+          "drawCalls": 8,
+          "triangles": 434416,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e57a81e"
+        },
+        {
+          "shot": "terrain/golden",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 10,
+          "triangles": 581872,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e57a81e"
+        },
+        {
+          "shot": "terrain/closeup_noon",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 10,
+          "triangles": 581872,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e57a81e"
+        },
+        {
+          "shot": "terrain/aerial_noon",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 10,
+          "triangles": 581872,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e57a81e"
+        },
+        {
+          "shot": "terrain/city_noon",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 10,
+          "triangles": 581872,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "17dfaadc"
+        },
+        {
+          "shot": "terrain/water_night",
+          "preset": "city",
+          "time": 22,
+          "variant": "water",
+          "pass": true,
+          "drawCalls": 10,
+          "triangles": 581872,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "17dfaadc"
+        },
+        {
+          "shot": "terrain/water_golden",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "water",
+          "pass": true,
+          "drawCalls": 10,
+          "triangles": 581872,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "17dfaadc"
+        }
+      ],
+      "score": 8.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 7.5 after r2"
+    },
+    "tools": {
+      "shotsTaken": 7,
+      "passing": 7,
+      "technicalPass": true,
+      "maxDrawCalls": 392,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "tools/road_preview",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 364,
+          "triangles": 4393530,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "d5204670"
+        },
+        {
+          "shot": "tools/bulldoze",
+          "preset": "city",
+          "time": 13,
+          "variant": "bulldoze",
+          "pass": true,
+          "drawCalls": 392,
+          "triangles": 4333335,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "d5204670"
+        },
+        {
+          "shot": "tools/road_closeup",
+          "preset": "closeup",
+          "time": 13,
+          "variant": "closeup",
+          "pass": true,
+          "drawCalls": 324,
+          "triangles": 4149762,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "d5204670"
+        },
+        {
+          "shot": "tools/road_night",
+          "preset": "city",
+          "time": 22,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 364,
+          "triangles": 4373640,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "d5204670"
+        },
+        {
+          "shot": "tools/road_golden",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 370,
+          "triangles": 4414160,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "d5204670"
+        },
+        {
+          "shot": "tools/terrain",
+          "preset": "city",
+          "time": 13,
+          "variant": "terrain",
+          "pass": true,
+          "drawCalls": 345,
+          "triangles": 3809330,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "5bfc5214"
+        },
+        {
+          "shot": "tools/zone",
+          "preset": "city",
+          "time": 13,
+          "variant": "zone",
+          "pass": true,
+          "drawCalls": 273,
+          "triangles": 3718623,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "fb682a3a"
+        }
+      ],
+      "score": 7.5,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic, documentary \u2014 never had a fix round"
+    },
+    "traffic": {
+      "shotsTaken": 8,
+      "passing": 8,
+      "technicalPass": true,
+      "maxDrawCalls": 572,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "traffic/r2_vehicles",
+          "preset": "closeup",
+          "time": 13.5,
+          "variant": "lineup",
+          "pass": true,
+          "drawCalls": 101,
+          "triangles": 1310746,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "774f6f7d"
+        },
+        {
+          "shot": "traffic/r2_crossing_closeup",
+          "preset": "closeup",
+          "time": 17.5,
+          "variant": "peds",
+          "pass": true,
+          "drawCalls": 572,
+          "triangles": 8963443,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "0fabedb9"
+        },
+        {
+          "shot": "traffic/composed_city",
+          "preset": "city",
+          "time": 18.5,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 404,
+          "triangles": 3493957,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "c0d8cd47"
+        },
+        {
+          "shot": "traffic/crossing_peds",
+          "preset": "closeup",
+          "time": 17.5,
+          "variant": "peds",
+          "pass": true,
+          "drawCalls": 383,
+          "triangles": 3792929,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "b7ff8b0d"
+        },
+        {
+          "shot": "traffic/flow_aerial",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "flow",
+          "pass": true,
+          "drawCalls": 208,
+          "triangles": 1156039,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "0e0c51c4"
+        },
+        {
+          "shot": "traffic/arterial_night",
+          "preset": "street",
+          "time": 22,
+          "variant": "night",
+          "pass": true,
+          "drawCalls": 387,
+          "triangles": 3972025,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "91e7dca0"
+        },
+        {
+          "shot": "traffic/junction_noon",
+          "preset": "street",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 376,
+          "triangles": 3968319,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "91e7dca0"
+        },
+        {
+          "shot": "traffic/lineup",
+          "preset": "closeup",
+          "time": 13.5,
+          "variant": "lineup",
+          "pass": true,
+          "drawCalls": 79,
+          "triangles": 651932,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "774f6f7d"
+        }
+      ],
+      "score": 8.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 8.0 after r2"
+    },
+    "ui": {
+      "shotsTaken": 11,
+      "passing": 11,
+      "technicalPass": true,
+      "maxDrawCalls": 1236,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "critic/r3/12_ui_panels",
+          "preset": "city",
+          "time": 13,
+          "variant": "panels",
+          "pass": true,
+          "drawCalls": 1233,
+          "triangles": 12580830,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "28afbd90"
+        },
+        {
+          "shot": "critic/r3/11_ui_default",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 1236,
+          "triangles": 12369627,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "28afbd90"
+        },
+        {
+          "shot": "critic/r2/12_ui_panels",
+          "preset": "city",
+          "time": 13,
+          "variant": "panels",
+          "pass": true,
+          "drawCalls": 947,
+          "triangles": 8896021,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "28afbd90"
+        },
+        {
+          "shot": "critic/r2/11_ui_default",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 871,
+          "triangles": 9155274,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "28afbd90"
+        },
+        {
+          "shot": "critic/12_ui_panels",
+          "preset": "city",
+          "time": 13,
+          "variant": "panels",
+          "pass": true,
+          "drawCalls": 382,
+          "triangles": 3927660,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        },
+        {
+          "shot": "critic/11_ui_default",
+          "preset": "city",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 361,
+          "triangles": 3706636,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "3e7cc9db"
+        },
+        {
+          "shot": "ui/panels",
+          "preset": "city",
+          "time": 13,
+          "variant": "panels",
+          "pass": true,
+          "drawCalls": 382,
+          "triangles": 3927316,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "2940411d"
+        },
+        {
+          "shot": "ui/photo",
+          "preset": "city",
+          "time": 18.75,
+          "variant": "photo",
+          "pass": true,
+          "drawCalls": 361,
+          "triangles": 3701028,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "2940411d"
+        }
+      ],
+      "score": 8.0,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; unchanged across all rounds \u2014 highest-scoring module"
+    },
+    "zoning": {
+      "shotsTaken": 8,
+      "passing": 4,
+      "technicalPass": false,
+      "maxDrawCalls": 338,
+      "consoleErrorShots": 0,
+      "latest": [
+        {
+          "shot": "zoning/harness_r2_street",
+          "preset": "street",
+          "time": 13,
+          "variant": "street",
+          "pass": true,
+          "drawCalls": 338,
+          "triangles": 2995276,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "4b88f222"
+        },
+        {
+          "shot": "zoning/harness_r2_lots",
+          "preset": "city",
+          "time": 13,
+          "variant": "lots",
+          "pass": true,
+          "drawCalls": 48,
+          "triangles": 1682300,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "54214630"
+        },
+        {
+          "shot": "zoning/harness_r2_aerial",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 46,
+          "triangles": 1670839,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "54214630"
+        },
+        {
+          "shot": "zoning/harness_golden",
+          "preset": "aerial",
+          "time": 18.75,
+          "variant": "default",
+          "pass": false,
+          "drawCalls": 41,
+          "triangles": 900807,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "b26cdee6"
+        },
+        {
+          "shot": "zoning/harness_paint",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "paint",
+          "pass": false,
+          "drawCalls": 41,
+          "triangles": 900807,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "55d0fba3"
+        },
+        {
+          "shot": "zoning/harness_lots",
+          "preset": "city",
+          "time": 13,
+          "variant": "lots",
+          "pass": false,
+          "drawCalls": 43,
+          "triangles": 912488,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "b26cdee6"
+        },
+        {
+          "shot": "zoning/harness_aerial",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "default",
+          "pass": true,
+          "drawCalls": 41,
+          "triangles": 900807,
+          "errors": 0,
+          "reasons": [],
+          "worldHash": "b26cdee6"
+        },
+        {
+          "shot": "zoning/aerial_noon",
+          "preset": "aerial",
+          "time": 13,
+          "variant": "default",
+          "pass": false,
+          "drawCalls": 41,
+          "triangles": 900807,
+          "errors": 0,
+          "reasons": [
+            "harness: page.screenshot: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /opt/pw-browsers/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --disable-dev-shm-usage --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --enable-webgl --ignore-gpu-blocklist --disable-lcd-text --force-color-profile=srgb --hide-scrollbars --mute-audio --disable-background-networking --disable-component-update --disable-sync --disable-default-apps --no-first-run --no-default-browser-check --disable-domain-reliability --metrics-recording-only --user-data-dir=/tmp/playwright_chromiumdev_profile-zokkXZ --remote-debugging-pipe --no-startup-window\n<launched> pid=26879\n[pid=26879][err] [26879:26892:0903/081648.390287:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=26879][err] [26879:26892:0903/081648.390342:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26892:0903/081648.390357:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=26879][err] [26879:26892:0903/081648.390374:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=26879][err] [26879:26892:0903/081648.454233:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26879:0903/081648.510225:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=26879][err] [26879:26892:0903/081648.518790:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26892:0903/081648.518810:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26892:0903/081648.518825:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26892:0903/081648.518833:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26892:0903/081648.518839:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=26879][err] [26879:26879:0903/081648.523517:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=26879][err] [26879:26879:0903/081648.526404:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=26879][err] [26879:26879:0903/081648.526424:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=26879][err] [26879:26892:0903/081648.535214:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=26879][err] [26879:26892:0903/081648.542439:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=26879][err] [26879:26879:0903/081648.542466:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: \n[pid=26879][err] [26910:26949:0903/081653.687871:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081653.688395:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081653.688510:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081653.690540:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081654.594363:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081654.609541:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081654.609988:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081654.646289:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081655.810303:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081655.894618:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081655.895894:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081656.092398:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081657.736282:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081657.830290:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081658.007920:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081658.170351:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081700.676168:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081700.818292:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081700.863712:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081701.224906:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081705.151910:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081705.213009:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081705.445961:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081705.780507:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081711.779456:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081711.865371:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081712.434293:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081713.060512:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081720.918439:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081722.552496:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081723.352495:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081724.169050:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081736.191690:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081738.706378:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081738.925443:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081739.434292:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081759.568193:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081800.559749:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081803.059657:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081804.476507:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081834.579915:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081834.674393:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081836.954299:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081841.956251:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081922.131370:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081923.203130:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879][err] [26910:26949:0903/081928.894322:ERROR:net/socket/ssl_client_socket_impl.cc:902] handshake failed; returned -1, SSL error code 1, net_error -202\n[pid=26879] <gracefully close start>\n[pid=26879] <forcefully close>\n[pid=26879] <kill>\n[pid=26879] <will force kill>\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+          ],
+          "worldHash": "b26cdee6"
+        }
+      ],
+      "score": 7.5,
+      "round": 3,
+      "openIssues": [],
+      "scoreNote": "r3 critic; self 8.0 after r2 high street (post-critic)"
+    }
+  },
+  "history": [],
+  "summary": {
+    "modules": 14,
+    "technicalPass": 10,
+    "totalShots": 238,
+    "worstDrawCalls": 1361,
+    "shotsWithConsoleErrors": 1,
+    "scored": 13,
+    "passingScore": 0,
+    "meanScore": 7.65
+  },
+  "staleRecords": {
+    "note": "Some `pass:false` records are historical, not current failures. Two causes, both fixed since:",
+    "causes": [
+      "buildings/* and zoning/* shots that failed with `page.screenshot: Timeout 30000ms exceeded` predate integrator pass 2, which raised the screenshot cap to 180 s with 3 retries. The JSON shows the module rendered fine (draw calls and zero console errors were recorded) and only the capture timed out.",
+      "app/_smoke is the very first harness smoke test, whose single console error was a favicon 404. The harness now filters that."
+    ],
+    "current": "Every module's most recent shots pass. demo: 32/32."
+  },
+  "critic": {
+    "rounds": 3,
+    "wholeGame": {
+      "r1": 6.5,
+      "r2": 7.5,
+      "r3": 8.0
+    },
+    "passMark": 8.5,
+    "passes": false,
+    "verdict": "docs/CRITIC.md",
+    "note": "Scores are the critic agent's, not the builders' self-scores. Modules fixed AFTER critic round 3 (environment r5, roads r2, zoning r2, demo r4) are not yet re-scored \u2014 a round 4 would likely raise several."
+  },
+  "openRisks": [
+    {
+      "id": "fps-unmeasured",
+      "severity": "high",
+      "what": "The >=50 fps at 1080p budget has NEVER been measured. This environment has 2 CPUs and no GPU; every frame is software-rendered by SwiftShader at ~10 fps regardless of content.",
+      "exposure": "1297-1361 draw calls, ~12.6M triangles, 607 clustered lights, 3 shadow cascades, a 296-call planar water reflection, GTAO, SMAA.",
+      "mitigation": "src/core/Quality.js \u2014 5-tier adaptive governor that measures the real machine and steps quality down/up with hysteresis. Bounds the behaviour; does not measure the number.",
+      "toClose": "Run the app on real hardware and record fps per tier. Nothing else closes it."
+    },
+    {
+      "id": "blind-ab-impossible",
+      "severity": "medium",
+      "what": "The spec's final gate \u2014 blind A/B against real Cities: Skylines II screenshots \u2014 cannot be run here. The egress proxy blocks every image source.",
+      "why": "Fabricating a reference would launder expectations into evidence.",
+      "consequence": "All art scores are the critic's unblinded, from-memory comparison. Pixel measurements in CRITIC.md are facts about our own images; the CS2 comparisons are not checkable.",
+      "toClose": "A human puts our frames beside real ones, shuffled, and picks."
+    },
+    {
+      "id": "asset-variety",
+      "severity": "medium",
+      "what": "Every texture, mesh and sound is procedural because polyhaven.org and ambientcg.com are blocked.",
+      "consequence": "No lettering anywhere in the city, pedestrians are flat-colour figures, one cloud family. The critic put the ceiling from here at 8.5-8.75 and said above that you are fighting the absence of an art team, not the code."
+    }
+  ]
+}
