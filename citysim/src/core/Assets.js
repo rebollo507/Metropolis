@@ -15,7 +15,7 @@ export class Assets {
     this._canvasCache = new Map();
   }
 
-  async loadManifest(url = '/assets/MANIFEST.json') {
+  async loadManifest(url = `${import.meta.env.BASE_URL}assets/MANIFEST.json`) {
     try {
       const r = await fetch(url);
       if (r.ok) this.manifest = await r.json();

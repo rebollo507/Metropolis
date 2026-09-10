@@ -1,0 +1,59 @@
+# Builds citysim/ and publishes it to GitHub Pages.
+#
+# The site is served from https://rebollo507.github.io/Metropolis/, so the build
+# needs the matching `base` — that is set in citysim/vite.config.js. If this
+# repository is ever renamed, update `base` there to match.
+name: Deploy to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# GITHUB_TOKEN needs to read the repo and mint an OIDC token for the deployment.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deployment finish rather than cancelling it half-published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: citysim/package-lock.json
+
+      - name: Install
+        run: npm ci
+        working-directory: citysim
+
+      - name: Build
+        run: npm run build
+        working-directory: citysim
+
+      - uses: actions/configure-pages@v5
+
+      # `path` is relative to the workspace root, not to the steps' working-directory.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: citysim/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
